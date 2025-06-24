@@ -17,7 +17,18 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days']
 )
 
-name, authentication_status, username = authenticator.login('Login', 'main')
+auth_result = authenticator.login('main')
+
+if auth_result:
+    name = auth_result['name']
+    authentication_status = auth_result['authentication_status']
+    username = auth_result['username']
+else:
+    name = None
+    authentication_status = None
+    username = None
+
+
 
 if authentication_status is False:
     st.error('Usuario/contraseña incorrectos')
