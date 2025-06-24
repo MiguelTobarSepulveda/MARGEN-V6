@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    admin:
+      email: admin@empresa.com
+      name: Administrador
+      password: $2b$12$KIX.Qs1c1UjkA3Q2ZT.7OuaF7kPP0h0VhNNrxErqk6YYwyeOwVZVm  # "admin123"
+    consulta:
+      email: consulta@empresa.com
+      name: Consulta
+      password: $2b$12$Wjv1Zx8vOYq09z3vZAt1B.CcM9nUqV2PO35QitI68fG0UvZGb8kG2  # "consulta"
+cookie:
+  expiry_days: 3
+  key: margen_app_login
+  name: margen_app_cookie
+preauthorized:
+  emails:
+    - admin@empresa.com
