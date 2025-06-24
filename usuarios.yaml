@@ -1,17 +1,21 @@
 credentials:
   usernames:
-    admin:
-      email: admin@empresa.com
-      name: Administrador
-      password: $2b$12$KIX.Qs1c1UjkA3Q2ZT.7OuaF7kPP0h0VhNNrxErqk6YYwyeOwVZVm  # "admin123"
-    consulta:
-      email: consulta@empresa.com
-      name: Consulta
-      password: $2b$12$Wjv1Zx8vOYq09z3vZAt1B.CcM9nUqV2PO35QitI68fG0UvZGb8kG2  # "consulta"
+    jsmith:
+      email: jsmith@gmail.com
+      first_name: John
+      last_name: Smith
+      password: abc123   # Puede ser texto plano; la librería lo hasheará automáticamente
+      roles: [viewer]    # Opcional: lista de roles del usuario
+    rbriggs:
+      email: rbriggs@gmail.com
+      first_name: Miguel
+      last_name: Tobar
+      password: Ghelo1988
+      roles: [admin, editor]
 cookie:
-  expiry_days: 3
-  key: margen_app_login
-  name: margen_app_cookie
-preauthorized:
-  emails:
-    - admin@empresa.com
+  expiry_days: 30
+  key: "alguna_clave_secreta_unica"
+  name: "nombre_de_cookie"
+# pre-authorized:
+#   emails:
+#     - otro@ejemplo.com
